@@ -14,14 +14,17 @@ INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES (11, 'Ditto', '2022-5-14', 4, TRUE, 22.00);
 
 /* insert data into the owners */
-INSERT INTO owners (id, full_name, age) VALUES (1, 'Sam Smith', 34),
-(2, 'Jennifer Orwell', 19),
-(3, 'Bob', 45),
-(4, 'Melody Pond', 77),
-(5, 'Dean Winchester', 14),
-(6, 'Jodie Whittaker', 38);
+INSERT INTO owners (id, full_name, age) 
+VALUES 
+(DEFAULT, 'Sam Smith', 34),
+(DEFAULT, 'Jennifer Orwell', 19),
+(DEFAULT, 'Bob', 45),
+(DEFAULT, 'Melody Pond', 77),
+(DEFAULT, 'Dean Winchester', 14),
+(DEFAULT, 'Jodie Whittaker', 38);
 
-
-id INT PRIMARY KEY,
-    full_name VARCHAR(100),
-    age INT
+/* insert data into the owners */
+INSERT INTO species (id, name) 
+VALUES 
+(DEFAULT, 'Pokemon'),
+(DEFAULT, 'Digimon');

@@ -16,14 +16,14 @@ ADD COLUMN species VARCHAR(100);
 
 /* Create owners table */
 CREATE TABLE owners (
-    id INT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     full_name VARCHAR(100),
     age INT
 );
 
 /* Create species table */
 CREATE TABLE species (
-    id INT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     name VARCHAR(100)
 );
 
