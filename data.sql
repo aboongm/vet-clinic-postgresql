@@ -12,3 +12,16 @@ INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES (9, 'Boarmon', '2005-6-7', 7, TRUE, 20.40);
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES (10, 'Blossom', '1998-10-13', 3, TRUE, 17.00);
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES (11, 'Ditto', '2022-5-14', 4, TRUE, 22.00);
+
+/* insert data into the owners */
+INSERT INTO owners (id, full_name, age) VALUES (1, 'Sam Smith', 34),
+(2, 'Jennifer Orwell', 19),
+(3, 'Bob', 45),
+(4, 'Melody Pond', 77),
+(5, 'Dean Winchester', 14),
+(6, 'Jodie Whittaker', 38);
+
+
+id INT PRIMARY KEY,
+    full_name VARCHAR(100),
+    age INT
