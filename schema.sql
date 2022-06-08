@@ -37,3 +37,12 @@ ADD COLUMN species_id INT REFERENCES species (id);
 /* Add owners_id in animals table referenced from owners table */
 ALTER TABLE animals
 ADD COLUMN owners_id INT REFERENCES owners (id);
+
+/* Create vets table */
+CREATE TABLE vets (
+    id SERIAL,
+    name VARCHAR(100),
+    age INT,
+    date_of_graduation DATE,
+    PRIMARY KEY (id)
+);
