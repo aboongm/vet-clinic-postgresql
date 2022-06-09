@@ -39,5 +39,9 @@ UPDATE animals SET owners_id = 3 WHERE name IN ('Devimon', 'Plantmon');
 UPDATE animals SET owners_id = 4 WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
 UPDATE animals SET owners_id = 5 WHERE name IN ('Angemon', 'Boarmon');
 
-
+/* insert data into vets table */
+INSERT INTO vets (id, name, age, date_of_graduation) VALUES (DEFAULT, 'William Tatcher', 45, '2000-04-23');
+INSERT INTO vets (id, name, age, date_of_graduation) VALUES (DEFAULT, 'Maisy Smith', 26, '2019-01-17');
+INSERT INTO vets (id, name, age, date_of_graduation) VALUES (DEFAULT, 'Stephanie Mendez', 64, '1981-05-04');
+INSERT INTO vets (id, name, age, date_of_graduation) VALUES (DEFAULT, 'Jack Harkness', 38, '2008-06-08');
 
