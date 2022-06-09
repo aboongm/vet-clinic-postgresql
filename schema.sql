@@ -46,3 +46,20 @@ CREATE TABLE vets (
     date_of_graduation DATE,
     PRIMARY KEY (id)
 );
+
+/* Create join/bridge table specializations */
+CREATE TABLE specializations (
+    vets_id INT NOT NULL,
+    species_id INT NOT NULL,
+    FOREIGN KEY (vets_id) REFERENCES vets (id) ON DELETE RESTRICT ON UPDATE CASCADE,
+    FOREIGN KEY (species_id) REFERENCES species (id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+/* Create join/bridge table visits */
+CREATE TABLE visits (
+    vets_id INT NOT NULL,
+    animals_id INT NOT NULL,
+    date_of_visit DATE,
+    FOREIGN KEY (vets_id) REFERENCES vets (id) ON DELETE RESTRICT ON UPDATE CASCADE,
+    FOREIGN KEY (animals_id) REFERENCES animals (id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
