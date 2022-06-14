@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 - Clone GitHub repository `gh repo clone aboongm/vet-clinic-postgresql`
 
 
-## Authors
+## Author
 
 👤 **Ranjit Luwang**
 
