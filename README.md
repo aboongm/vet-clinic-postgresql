@@ -3,7 +3,7 @@ In this project I will use a relational database to create the initial data stru
 
 
 ## Entitiy Relationship Diagram of vet-clinic-postgresql
-![screenshot](./diagrams/vets_table.png)
+![vets_table](https://user-images.githubusercontent.com/49184579/173556995-2b1ca943-6128-496f-994d-dd53b8e27504.png)
 
 ## Built With
 
